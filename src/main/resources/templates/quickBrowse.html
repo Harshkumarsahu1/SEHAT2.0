@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .hover-scale {
+            transition: transform 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+<nav th:replace="user/user_navbar :: user-navbar"></nav>
+<div class="flex justify-center items-center min-h-screen flex-wrap gap-8">
+    <div class="w-96 h-96 bg-pink-100 border-3 border-gray-300 hover-scale rounded-lg shadow-lg flex flex-col items-center justify-center">
+        <img src="images/kcal.png" alt="Calories Image" class="w-36 h-36 mb-4">
+        <div class="text-center">
+            <h4 class="font-bold underline mb-2">Recipe by calories</h4>
+            <p class="mb-4">Get list of recipes matching to daily calories.</p>
+            <button onclick="location.href='/resbycal'" class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Let's Go</button>
+        </div>
+    </div>
+    <div class="w-96 h-96 bg-purple-100 border-3 border-gray-300 hover-scale rounded-lg shadow-lg flex flex-col items-center justify-center">
+        <img src="images/ing.png" alt="Ingredients Image" class="w-36 h-36 mb-4">
+        <div class="text-center">
+            <h4 class="font-bold underline mb-2">Convert Amount</h4>
+            <p class="mb-4">Convert amount of ingredients as per your choice</p>
+            <button onclick="location.href='/convertamount'" class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Let's Go</button>
+        </div>
+    </div>
+    <div class="w-96 h-96 bg-purple-300 border-3 border-gray-300 hover-scale rounded-lg shadow-lg flex flex-col items-center justify-center">
+        <img src="images/nut.png" alt="Nutrients Image" class="w-36 h-36 mb-4">
+        <div class="text-center">
+            <h4 class="font-bold underline mb-2">Nutrients</h4>
+            <p class="mb-4">Get nutrients by dish name</p>
+            <button onclick="location.href='/nutbydish'" class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Let's Go</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js" th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+    <link href="../../static/css/spring-core.css" th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .hover-scale {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .result {
+            height: 3rem; /* Fixed height for result area */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<nav th:replace="user/user_navbar :: user-navbar"></nav>
+
+<div class="flex justify-center items-start mt-20 mx-4 gap-4">
+    <div class="box bg-white p-10 border border-gray-300 rounded-lg text-center hover-scale shadow-lg mt-10">
+        <img src="images/joke.jpg" alt="Joke Image" class="w-full h-72 object-cover rounded-lg">
+        <form class="form-horizontal mt-4" action="#" th:action="@{/GetJoke}" th:object="${input}" method="post">
+            <input class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg" type="submit" value="Show some joke....">
+        </form>
+        <div class="result mt-4">
+            <h5><span th:text="${joke}"></span></h5>
+        </div>
+    </div>
+
+    <div class="box bg-white p-10 border border-gray-300 rounded-lg text-center hover-scale shadow-lg mt-10">
+        <img src="images/think.jpg" alt="Think Image" class="w-full h-72 object-cover rounded-lg">
+        <form class="form-horizontal mt-4" action="#" th:action="@{/GetTrivia}" th:object="${input}" method="post">
+            <input class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg" type="submit" value="Show some food trivia....">
+        </form>
+        <div class="result mt-4">
+            <h5><span th:text="${trivia}"></span></h5>
+        </div>
+    </div>
+
+    <div class="box bg-white p-10 border border-gray-300 rounded-lg text-center hover-scale shadow-lg mt-10">
+        <img src="images/nutrients.jpg" alt="Nutrients Image" class="w-full h-72 object-cover rounded-lg">
+        <form class="form-horizontal mt-4" action="#" th:action="@{/GetNutrients}" th:object="${input}" method="post">
+            <input class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg" type="submit" value="Show some nutrients....">
+        </form>
+        <div class="result mt-4">
+            <h5><span th:text="${nutrients}"></span></h5>
+        </div>
+    </div>
+</div>
+</body>
+</html>
