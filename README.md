@@ -21,7 +21,7 @@ Are you a gym trainer or a yoga instructor? SEHAT offers you the perfect opportu
 if your want to know about recipe of dishes by given calorie or nutients in any dish or or incredients in home made food then this is for you
 ![quickBrowse](QuickBrowse.png)
 ## Calorie-Specific Recipe Search
-![Recipe Search](recipeByCal)  
+![Recipe Search](recipeByCal.png)  
 At SEHAT, we understand that managing your diet is key to achieving your health goals. That’s why we’ve made it simple for you to find the perfect recipe tailored to your calorie needs. Just enter the desired calorie count, and our smart search feature will provide you with a list of delicious recipes that match your criteria. Whether you’re aiming for 394 calories or any other specific amount, SEHAT has the recipe options you need to stay on track.
 
 ## Explore Natural Ingredients in Fruits
