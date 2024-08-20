@@ -7,7 +7,7 @@ SEHAT is a comprehensive platform designed to cater to all your health and welln
 To ensure a secure and seamless experience, we offer quick and easy login and signup options through Google and GitHub.
 
 ### Google Login/Signup
-![Google Login](login.png)  
+![Google Login](Login.png)  
 Use your Google account to access SEHAT instantly. Simply click the Google button to authenticate securely and start using the platform without the need to create a new account.
 
 If you're a developer or prefer using your GitHub account, you can easily sign in with GitHub. This option provides you with the same level of security and ease of use, leveraging your existing GitHub credentials.
@@ -19,9 +19,9 @@ Are you a gym trainer or a yoga instructor? SEHAT offers you the perfect opportu
 ![contactList](contactlist.png)
 ## QuickBrowse 
 if your want to know about recipe of dishes by given calorie or nutients in any dish or or incredients in home made food then this is for you
-![quickBrowse](quickBrowse.png)
+![quickBrowse](QuickBrowse.png)
 ## Calorie-Specific Recipe Search
-![Recipe Search](recipeBycal)  
+![Recipe Search](recipeByCal)  
 At SEHAT, we understand that managing your diet is key to achieving your health goals. That’s why we’ve made it simple for you to find the perfect recipe tailored to your calorie needs. Just enter the desired calorie count, and our smart search feature will provide you with a list of delicious recipes that match your criteria. Whether you’re aiming for 394 calories or any other specific amount, SEHAT has the recipe options you need to stay on track.
 
 ## Explore Natural Ingredients in Fruits
