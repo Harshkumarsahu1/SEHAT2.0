@@ -51,15 +51,18 @@
         </div>
     </div>
 
-    <div class="box bg-white p-10 border border-gray-300 rounded-lg text-center hover-scale shadow-lg mt-10">
+    <div class="box bg-white p-16 border border-gray-300 rounded-lg text-center hover-scale shadow-lg mt-10">
         <img src="images/nutrients.jpg" alt="Nutrients Image" class="w-full h-72 object-cover rounded-lg">
-        <form class="form-horizontal mt-4" action="#" th:action="@{/GetNutrients}" th:object="${input}" method="post">
-            <input class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg" type="submit" value="Show some nutrients....">
-        </form>
-        <div class="result mt-4">
-            <h5><span th:text="${nutrients}"></span></h5>
-        </div>
+        <button class="btn btn-primary bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mt-4" onclick="openNutrientImage()">Show some nutrients....</button>
     </div>
+
+    <script>
+        function openNutrientImage() {
+            window.open('images/nutrientshow.png', '_blank'); // Adjust the path if needed
+        }
+    </script>
+
+
 </div>
 </body>
 </html>

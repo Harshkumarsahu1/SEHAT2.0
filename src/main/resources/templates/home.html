@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html
-  lang="en"
-  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+        lang="en"
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
 >
-  <head>
-    <title>Home page</title>
-  </head>
-  <body>
-    <div id="content">
-      <h1>Welcome to home page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-        ratione!
-      </p>
+<head>
+  <title>Home page</title>
+
+</head>
+<body>
+<div id="content">
+  <div class="flex justify-center flex-col items-center">
+    <h1 class="text-5xl">Welcome to SEHAT</h1>
+    <h2 style="margin-top: 20px; color:black;">
+      <span style="background-color: yellow;">SEHAT stands "System for Effective Health and Active Training"</span>
+    </h2>
+
+    <div class="carousel-inner">
+      <img data-th-src="@{'/images/main.png'}" />
     </div>
-    <script>
-      console.log("Home page");
-    </script>
-  </body>
+  </div>
+</div>
+<script>
+  console.log("Home page");
+</script>
+</body>
 </html>
