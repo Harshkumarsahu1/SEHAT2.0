@@ -1,5 +1,5 @@
 console.log("Contacts.js");
-const baseURL = "http://localhost:8081";
+const baseURL = "https://sehat2-0-10.onrender.com";
 const viewContactModal = document.getElementById("view_contact_modal");
 
 // options with default values
