@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:21-jdk-slim
 COPY --from=build /target/scm2.0-0.0.1-SNAPSHOT.jar demo.jar
-EXPOSE 8081
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","demo.jar"]
