@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{})}">
-  <head>
-  
-    <title>
-      Services
-    </title>
-  </head>
-  <body>
-    <section id="content">
-      <h1>Welcome to services page</h1>
-      <h2>Services offered by SCM</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore assumenda rerum harum mollitia incidunt nesciunt dignissimos esse dicta reprehenderit quam, quisquam aspernatur enim consequatur accusamus, minima alias odit ducimus.<10></10>
-    </section>
+<head>
+  <title>Our Services - SEHAT</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hover-scale {
+      transition: transform 0.3s ease-in-out;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
 
-  </body>
+<section id="content"
+         class="min-h-screen flex justify-center items-center"
+         th:style="|background:
+           linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+           url('@{/images/services-bg.png}') center/cover no-repeat fixed;|">
+
+  <!-- Services Container -->
+  <div class="w-screen min-h-screen bg-white bg-opacity-90 rounded-2xl shadow-2xl p-16 md:p-20 hover-scale text-center flex flex-col justify-start items-center overflow-auto">
+
+    <h1 class="text-5xl font-bold text-gray-800 mb-8">Our Services</h1>
+
+
+    <p class="text-xl mb-10 max-w-2xl">
+      To use all these services, please
+      <a href="/login" class="text-blue-600 font-semibold hover:underline">
+        login
+      </a>
+      to our website first. SEHAT offers a variety of tools to improve your fitness, nutrition, and wellness.
+    </p>
+    <!-- Services List -->
+    <ul class="text-left text-xl space-y-8 max-w-3xl mx-auto">
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">🥗 Calorie-Based Recipe Search</h2>
+        <p>
+          Enter your desired calorie limit, and SEHAT will batch fetch recipes that match your target.
+          This allows you to plan meals according to your diet goals efficiently.
+        </p>
+      </li>
+
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">💬 Quick Answer (Nutrients in Fruits)</h2>
+        <p>
+          Want to know the nutrient content of any fruit instantly? Quick Answer provides detailed
+          information about vitamins, minerals, and calories in your selected fruits.
+        </p>
+      </li>
+
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">🔐 Secure Login Options</h2>
+        <p>
+          Access SEHAT securely using Google, GitHub, or Email login. This ensures your data and
+          preferences are saved safely.
+        </p>
+      </li>
+
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">🧑‍🏫 Professional Profiles</h2>
+        <p>
+          Connect with certified gym trainers, yoga instructors, and nutrition experts. Browse profiles,
+          read reviews, and schedule sessions for personalized guidance.
+        </p>
+      </li>
+
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">🍊 Explore Natural Nutrients</h2>
+        <p>
+          Learn about the natural nutrients present in fruits and vegetables. SEHAT provides detailed
+          breakdowns of vitamins, minerals, and benefits for better dietary decisions.
+        </p>
+      </li>
+
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">😄 Chillax</h2>
+        <p>
+          Take a break with fun jokes, trivia, and engaging content. SEHAT promotes mental wellness
+          along with physical health.
+        </p>
+      </li>
+
+      <li>
+        <h2 class="text-2xl font-semibold mb-2">📩 Send Your Queries</h2>
+        <p>
+          Have questions or need help? SEHAT provides a service to send queries directly to our team.
+          Our support staff will respond and guide you to use our platform efficiently.
+        </p>
+      </li>
+    </ul>
+
+    <p class="text-xl mt-10 mb-10">
+      SEHAT is designed to make your health journey <strong>easy, fun, and insightful</strong>. Start exploring after logging in! 🚀
+    </p>
+
+  </div>
+</section>
+
+</body>
 </html>
