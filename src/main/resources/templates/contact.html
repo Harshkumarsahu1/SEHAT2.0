@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html
-  lang="en"
-  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+        lang="en"
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
 >
-  <head>
-    <title>Contact Us Page</title>
-  </head>
-  <body>
-    <div id="content">
-      <h1>Welcome to Contact page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-        ratione!
-      </p>
-    </div>
-    <script>
-      console.log("Home page");
-    </script>
-  </body>
+<head>
+    <title>Contact Us - SEHAT</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div id="content" class="bg-white rounded-xl shadow-lg p-12 text-center flex flex-col items-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">Contact Us</h1>
+    <p class="text-lg text-gray-600 mb-8">
+        Have any questions or <span class="text-blue-600 font-bold">queries</span>? Submit your
+        <span class="text-blue-600 font-bold">query</span> using the Google Form below.
+    </p>
+
+    <!-- Blue underlined link to Google Form -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDAoESGR8QE2m5dh8FywTMUkdilDDC3WYLrXL2K8i6AQP01A/viewform?usp=dialog"
+       target="_blank"
+       class="text-blue-600 underline font-semibold text-lg hover:text-blue-800 transition-transform transform hover:scale-105 inline-block mb-4">
+        Submit Your Query
+    </a>
+
+    <p class="text-gray-500 text-sm mb-6">
+        You will be redirected to a secure Google Form to submit your <span class="text-blue-600 font-bold">query</span>.
+    </p>
+
+    <!-- Image inside content box, centered -->
+    <img th:src="@{/images/img.png}" alt="Contact Illustration" class="w-96 rounded-lg shadow-md mt-4">
+</div>
+
+<script>
+    console.log("Contact page loaded");
+</script>
+
+</body>
 </html>
